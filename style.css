@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'the_hospitalregular';
+    src: url('the_hospital-webfont.woff2') format('woff2'),
+         url('the_hospital-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'the_hospitalregular';
+	color: #f1f2f4;
+	scroll-behavior: smooth;
+}
+
+section{
+	max-width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.PageOne{
+	background-image: linear-gradient(to right,rgba(26,26,26,0.8),rgba(32,32,32,0.8)); 
+}
+
+.PageTwo{
+	background-image: url(img_03.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-size: 100% 100%;*/
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.PageThree{
+	background-image: url(leaf.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+h1{
+	font-size : 5em;
+	letter-spacing: 5px;
+	text-align: center;
+	text-shadow: 3px 0 0 rgba(255,255,255,0.3);
+	margin-bottom: 50px;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	font-size: 2em;
+	margin-right: 40px;
+	text-align: center;
+}
+.btn{
+	border: 1px solid #f1f2f4;
+	padding: 10px 15px;
+}
+ul li a{
+	position: relative;
+	text-decoration: none;
+	letter-spacing: 3px;
+	cursor: pointer;
+	text-shadow: 3px 0 0 rgba(255,255,255,0.3);
+}
+
+ul li a::after{
+	content : '';
+	position : absolute;
+	left : 0;
+	bottom : 0;
+	width : 0;
+	height : 3px;
+	background : #f1f2f4;
+	transition: 0.5s;
+}
+
+ul li a:hover::after{
+	width: 100%;
+}
+
+@media screen and(min-width:600px){
+	ul li{
+		width: 100%;
+		display: block;
+	}
+	
+}
+	
